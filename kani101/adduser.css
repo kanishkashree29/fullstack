@@ -1,0 +1,101 @@
+
+.container {
+    background-color: #f8f9fa;
+    border-radius: 0.5rem;
+    padding: 2rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    animation: fade-in 0.5s ease-in-out;
+  }
+  
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .border {
+    border-color: #ccc;
+  }
+  
+  .form-control {
+    width: 100%;
+    border-color: #ccc;
+    transition: border-color 0.3s ease-in-out;
+  }
+  
+  .form-control:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 0 0.25rem rgba(0, 123, 255, 0.25);
+  }
+  
+  .btn-outline-primary,
+  .btn-outline-danger {
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border-radius: 0.25rem;
+  }
+  
+  .btn-outline-primary {
+    background-color: #007bff;
+    color: #fff;
+    border-color: #007bff;
+  }
+  
+  .btn-outline-primary:hover {
+    background-color: #0069d9;
+  }
+  
+  .btn-outline-danger {
+    background-color: #dc3545;
+    color: #fff;
+    border-color: #dc3545;
+  }
+  
+  .btn-outline-danger:hover {
+    background-color: #c82333;
+  }
+  
+  h2 {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .form-label {
+    font-weight: bold;
+  }
+  
+  .form-control {
+    padding: 0.5rem 1rem;
+  }
+  
+  button[type="submit"],
+  .btn-cancel {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border-radius: 0.25rem;
+    width: 15%; /* Adjust the width as per your preference */
+    display: inline-block;
+    margin-right: 1rem; /* Add margin-right instead of margin-left for equal spacing */
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  }
+  
+  .btn-cancel:last-child {
+    margin-right: 0; /* Remove margin-right for the last button to avoid extra spacing */
+    margin-top: 10%;
+    max-width: 20%;
+  }
+  
+  button[type="submit"]:hover,
+  .btn-cancel:hover {
+    background-color: #333; /* Update the hover background color as per your preference */
+    color: #fff; /* Update the hover text color as per your preference */
+  }
+  

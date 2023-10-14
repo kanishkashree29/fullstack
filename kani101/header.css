@@ -1,0 +1,44 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #f2f2f2;
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards;
+  }
+  
+  .nav-menu ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-menu ul li {
+    margin-right: 20px;
+  }
+  
+  .nav-menu ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-menu ul li a:hover {
+    color: #555;
+  }
+  
+  /* CSS animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
